@@ -6,7 +6,7 @@ const LoginWithGoogle = () => {
 
   const handleGoogleLogin = async () => {
     try {
-      const response = await fetch('http://13.232.186.121:8080/login/google');
+      const response = await fetch('http://13.127.76.87:8080/login/google');
       const data = await response.json();
       // Check if token exists in response
       if (data.token) {
