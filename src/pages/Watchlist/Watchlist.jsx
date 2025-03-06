@@ -51,7 +51,7 @@ const Watchlist = () => {
           </TableHeader>
 
           <TableBody className="">
-            {watchlist.items.map((item) => (
+            {watchlist?.items?.map((item) => (
               <TableRow className="" key={item.id}>
                 <TableCell
                   onClick={() => navigate(`/market/${item.id}`)}
